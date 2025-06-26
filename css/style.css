@@ -9,20 +9,21 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(211, 25, 25);
+    background-color:darkred;
     height: 150%;
     padding: 0%;
 }
 
 .img {
-    width: 50%;
-    height: 50%;
+    width: 10%;
+    height: 10%;
+    margin-left:10px;
 }
 
 #liste {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin-right: 500px;
     display: flex;
     flex-direction:row;
     gap: 10%; 
@@ -50,9 +51,11 @@ body {
 #apropos{
     padding: 5%;
     h1{
-        text-align: center;
-        color: rgb(0, 0, 0)(0, 0, 255, 0.048);
-        margin: 10%;
+        color: darkred;
+    margin: 2% 2%;
+    padding: 2% 2%;
+    background-color: #333;
+    display: inline;
     }
     img{
         width: 50%;
@@ -98,11 +101,15 @@ body {
 .tableau:hover{
     box-shadow: inset -20px -11px 20px 20px black;
 }
-h1{
-        text-align: center;
-        color:aqua;
-        
-    }
+#work{
+    color: darkred;
+    margin: 2% 2%;
+    padding: 2% 2%;
+    background-color: #333;
+    display: inline;
+
+
+}
 .tableau div{
     display:flex;
     justify-content:space-between;
@@ -124,3 +131,47 @@ h1{
 .tableau button:hover{
         background-color: black;
     }
+/* *********************************************************************** */
+footer{
+    
+    width: 100%;
+    height: 300px;
+    background-color: darkred;
+    margin-top: 5%;
+    padding: 20px;
+    #copy{
+        text-align: center;
+
+    }
+    #icone{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:row;
+        margin-top:38px;
+        
+    }
+    #copy:hover{
+        font-family:serif ;
+        font-size: x-large;
+        font-style: oblique;
+    }
+}
+/* responsive****************************************** */
+/* css pour  les petits ecrans */
+@media screen and (max-width:576px) {
+    body{
+        background-color: azure;
+    }
+    nav ul{
+        flex-direction: column;
+        gap:3px;
+        li{
+            margin:4px
+        }
+    }
+    .GRID{
+        display:block;
+    }
+    
+} 
